@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="understand"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <Button
+        android:id="@+id/lightOn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="lightOn"
+        android:text="@string/on"
+        app:layout_constraintBottom_toTopOf="@+id/changeColor"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg" />
+
+    <Button
+        android:id="@+id/lightOff"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="lightOff"
+        android:text="@string/off"
+        app:layout_constraintBottom_toTopOf="@+id/forward"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg" />
+
+    <Button
+        android:id="@+id/changeColor"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="lightChange"
+        android:text="@string/change_color"
+        app:layout_constraintBottom_toTopOf="@+id/turnDeg"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="forward"
+        android:text="@string/forward"
+        app:layout_constraintBottom_toTopOf="@+id/turnDeg"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg" />
+
+    <EditText
+        android:id="@+id/turnDeg"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/input_degrees"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <Button
+        android:id="@+id/rotate_right"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="rotateRight"
+        android:text="@string/rotate_right"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/turnDeg" />
+
+    <Button
+        android:id="@+id/rotate_left"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="rotateLeft"
+        android:text="@string/rotate_left"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/turnDeg" />
+
+    <Button
+        android:id="@+id/speak"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="speakDflow"
+        android:text="@string/speak"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/dflowText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/understand"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="understand"
+        android:text="@string/understand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/dflowText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/dflowText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rotate_left"
+        app:layout_constraintVertical_bias="0.0"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/dialog"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="dialog"
+        android:text="@string/dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/speak"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/startRec"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="startRecording"
+        android:text="@string/start_rec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/dialog"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/stopRec"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="stopRecording"
+        android:text="@string/stop_rec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toTopOf="@+id/dialog"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/playFile"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="playFile"
+        android:text="@string/play_file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/startRec"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/stopFile"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="stopFile"
+        android:text="@string/stop_file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/turnDeg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/turnDeg"
+        app:layout_constraintTop_toBottomOf="@+id/stopRec"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testAPI"
+        android:text="TestAPI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dflowText"
+        app:layout_constraintVertical_bias="0.947" />
+</androidx.constraintlayout.widget.ConstraintLayout>
